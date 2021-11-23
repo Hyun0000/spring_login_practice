@@ -18,10 +18,10 @@ public class MemberController {
 	@Autowired
 	private MemberService memberService;
 	
-	@GetMapping("/")
-	public String signUp() {
-		return "redirect:/";
-	}
+//	@GetMapping("/")
+//	public String signUp() {
+//		return "redirect:/";
+//	}
 	
 	@PostMapping("/signUp")
 	public String insertMember(Member member, Model model) {
